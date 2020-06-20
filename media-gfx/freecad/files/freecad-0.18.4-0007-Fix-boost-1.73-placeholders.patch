@@ -1,0 +1,29 @@
+diff -ur FreeCAD-0.18.4.orig/src/Gui/DAGView/DAGView.cpp FreeCAD-0.18.4/src/Gui/DAGView/DAGView.cpp
+--- FreeCAD-0.18.4.orig/src/Gui/DAGView/DAGView.cpp	2020-06-20 22:29:56.839759362 +0200
++++ FreeCAD-0.18.4/src/Gui/DAGView/DAGView.cpp	2020-06-21 00:33:46.180769512 +0200
+@@ -28,6 +28,9 @@
+ 
+ #include <sstream>
+ 
++#define BOOST_BIND_GLOBAL_PLACEHOLDERS
++#include <boost/bind.hpp>
++
+ #include <Base/Console.h>
+ 
+ #include <App/Document.h>
+diff -ur FreeCAD-0.18.4.orig/src/Mod/Sketcher/Gui/TaskSketcherGeneral.cpp FreeCAD-0.18.4/src/Mod/Sketcher/Gui/TaskSketcherGeneral.cpp
+--- FreeCAD-0.18.4.orig/src/Mod/Sketcher/Gui/TaskSketcherGeneral.cpp	2020-06-20 22:29:57.049759804 +0200
++++ FreeCAD-0.18.4/src/Mod/Sketcher/Gui/TaskSketcherGeneral.cpp	2020-06-21 00:38:02.221130687 +0200
+@@ -26,6 +26,10 @@
+ #ifndef _PreComp_
+ #endif
+ 
++
++#define BOOST_BIND_GLOBAL_PLACEHOLDERS
++#include <boost/bind.hpp>
++
+ #include "ui_TaskSketcherGeneral.h"
+ #include "TaskSketcherGeneral.h"
+ #include <Gui/Application.h>
+Only in FreeCAD-0.18.4/src/Tools/generateBase: __pycache__
+Only in FreeCAD-0.18.4/src/Tools/generateTemplates: __pycache__
